@@ -650,6 +650,114 @@ header .current-page a:visited {
     color: var(--blueColor);
 }
 
+/* hw 5 */
+
+.current-page {
+    position: relative;
+}
+
+.current-page::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 76px;
+    background: var(--blueColor);
+    border-radius: 2px;
+}
+
+.filter-link:hover .overlay {
+    transform: translateY(0);
+}
+
+.img-wrap {
+    position: relative;
+    overflow: hidden
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
 
 
-/* comment to test terminal */
+    transform: translateY(100%);
+    transition: transform 250ms ease-out;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.overlay>p {
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+    padding: 63px 23px;
+    letter-spacing: 0.03em;
+    line-height: 1.56;
+}
+
+.thumb {
+    position: relative;
+}
+
+.thumb>.label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 27px;
+    text-align: center;
+
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--whiteColor);
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.data-modal {
+    min-width: 528px;
+    min-height: 581px;
+    background-color: #fff;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.data-modal.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    fill: black;
+}
+
+/* .close:hover,
+.close:focus {
+    fill: black;
+} */
