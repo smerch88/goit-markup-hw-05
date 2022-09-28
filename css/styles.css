@@ -170,16 +170,35 @@ img {
     letter-spacing: 0.02em;
     color: var(--whiteColor);
     border-bottom: 1px solid var(--shadowColor);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
-.page-header a:link,
-.page-footer a:link {
+.site-nav-link {
     text-decoration: none;
     color: var(--headTextColor);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+
+    padding: 32px 0;
+    display: block;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+.page-footer .site-nav-link {
+    padding: 0;
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus {
+    color: var(--blueColor);
 }
 
 .page-footer a:link {
@@ -227,9 +246,6 @@ footer .contacts a:link {
 footer .contacts a:hover,
 footer .contacts a:hover {
     color: var(--blueColor);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
 .page-header .logo a:visited,
@@ -237,9 +253,7 @@ footer .contacts a:hover {
 .logo a:focus,
 .logo a {
     color: var(--blueColor);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+
 }
 
 .page-header .logo .logo-link {
@@ -277,14 +291,15 @@ footer .contacts a:hover {
     color: var(--whiteColor);
     border: none;
     cursor: pointer;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
 .order-button:hover,
 .order-button:focus {
     background-color: var(--backgroundButtonColor);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
 .filter-link {
@@ -299,9 +314,6 @@ footer .contacts a:hover {
     display: block;
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
         0px 1px 1px rgba(0, 0, 0, 0.12);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
 .filter-description {
@@ -330,6 +342,10 @@ footer .contacts a:hover {
     font-weight: 500;
     font-family: 'Roboto';
     border-radius: 4px;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
 .filter-button:hover,
@@ -337,9 +353,6 @@ footer .contacts a:hover {
     background: var(--blueColor);
     color: var(--whiteColor);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
 /* sizing */
@@ -526,15 +539,16 @@ footer .contacts a:hover {
     align-items: center;
     justify-content: center;
     color: var(--iconColor);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
 .clients .client-link:hover,
 .clients .client-link:focus {
     border-color: var(--blueColor);
     color: var(--blueColor);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
 .client-icon {
@@ -581,6 +595,10 @@ footer .contacts a:hover {
     height: 44px;
     border-radius: 50%;
     outline: none;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
 .instagram {
@@ -619,9 +637,6 @@ footer .contacts a:hover {
 .social-box:focus {
     background-color: var(--blueColor);
     color: var(--whiteColor);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
 .page-footer .container {
