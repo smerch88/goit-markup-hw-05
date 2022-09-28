@@ -173,7 +173,7 @@ img {
 
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav-link {
@@ -189,7 +189,7 @@ img {
 
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-footer .site-nav-link {
@@ -294,7 +294,7 @@ footer .contacts a:hover {
 
     transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-button:hover,
@@ -343,9 +343,9 @@ footer .contacts a:hover {
     font-family: 'Roboto';
     border-radius: 4px;
 
-    transition-property: color, background-color;
+    transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -542,7 +542,7 @@ footer .contacts a:hover {
 
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients .client-link:hover,
@@ -598,7 +598,7 @@ footer .contacts a:hover {
 
     transition-property: color, background-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .instagram {
@@ -703,7 +703,8 @@ header .current-page a:visited {
     border-radius: 2px;
 }
 
-.filter-link:hover .overlay {
+.filter-link:hover .overlay,
+.filter-link:focus .overlay {
     transform: translateY(0);
 }
 
